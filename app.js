@@ -26,4 +26,6 @@ function generateAlienShip(){
         firepower: Math.floor(Math.random() * (4 - 2 + 1)) + 2, 
         accuracy: Math.random() * (0.8 - 0.6) + 0.6
     };
+    
     }
+    console.log(generateAlienShip());

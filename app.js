@@ -1,6 +1,22 @@
 // create object literals
-const ussassembly = {
+const ussAssembly = {
     hull: 20,
     firepower: 5,
     accuracy: 0.7
 }
+
+// The alien ships should each have the following ranged properties determined randomly
+
+function generateAlienShip() {
+    return {
+      hull: Math.floor(Math.random() * (6 - 3 + 1)) + 3 
+    };
+  }
+  
+const alienShips = [];
+for (let i = 0; i <= 5; i++) {
+    alienShips.push(generateAlienShip());
+}
+  
+console.log(alienShips); 
+
